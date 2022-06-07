@@ -193,3 +193,7 @@ nav {
     stroke-dashoffset: 100;
     transition: 0.6s ease-out;
 }
+
+footer {
+    height: 14vh;
+}
