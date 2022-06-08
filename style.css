@@ -7,11 +7,6 @@
     font-size: 14px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -27,24 +22,27 @@ header {
 
 .mask {
     background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    
+}
+
+.bg-transparent {
+    background-color: transparent !important;
 }
 
 nav {
     margin: 0 auto;
-    background-color: transparent !important;
-    color: white;
-}
-
-.collapse a {
-    color: white !important;
 }
 
 .profile {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 150px;
 }
 
 .profile-name {
@@ -62,8 +60,7 @@ nav {
 .profile-photo {
     width: 20rem;
     height: 20rem;
-    position: absolute;
-    bottom: 20rem;
+    margin-top: 50px;
     border-radius: 50%;
     overflow: hidden;
 }
