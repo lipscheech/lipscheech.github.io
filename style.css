@@ -40,7 +40,7 @@ header {
 #education,
 #projects,
 #contact {
-  width: 940px !important;
+  max-width: 940px !important;
   margin: 0 auto;
 }
 .profile-name {
@@ -174,10 +174,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  #about .container,
-  .mask {
-    margin: auto !important;
-  }
+    #about,
+    #education,
+    #projects,
+    #contact {
+      margin: auto;
+    }
 
   .profile img{
     position: static;
