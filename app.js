@@ -2,7 +2,6 @@ const nav = document.getElementById('nav');
 const links = nav.querySelectorAll('a')
 
 document.body.onscroll = () => {
-
     if(window.pageYOffset >= 567){
 
         nav.classList.remove('bg-transparent')
