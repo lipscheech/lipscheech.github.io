@@ -7,38 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Portfolio - Filipe Cavalcante</title>
 </head>
 
 <body>
     <header>
-        <div class="bg-image h-100">
+        <div class="header d-flex flex-column">
             <div class="mask">
-                <div class="container h-100">
-                    <nav class="navbar fixed-top px-md-5" id="nav">
-                        <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link active text-white fs-4 fw-bold" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fs-4 fw-bold" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fs-4 fw-bold" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fs-4 fw-bold" href="#contact">Contacts</a>
-                            </li>
-                          </ul>
-                    </nav>
-                    <div class="profile">
+                <nav class="navbar sticky-md-top px-md-5" id="nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fs-4 fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4 fw-bold" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4 fw-bold" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4 fw-bold" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container mt-5">
+                    <div class="profile d-md-flex flex-column align-items-center justify-content-between">
                         <p class="profile-name">Filipe Cavalcante</p>
-                        <p class="profile-description">A Developer and Devops Student</p>
-                        <img class="profile-photo border border-4 border-light" src="assets/photo-profile.jpg"
-                            alt="Foto de perfil">
+                        <p class="profile-description mb-3">A Developer and Devops Student</p>
+                        <img class="profile-photo border border-4 border-light img-fluid rounded-circle mt-5"
+                            src="assets/photo-profile.jpg" alt="Foto de perfil">
                     </div>
                 </div>
             </div>
@@ -47,20 +47,23 @@
     <main>
         <section id="about">
             <div class="container">
-                <p class="welcome-text">Welcome to my portifolio</p>
-                <p class="about-text mt-4">Um motivado, adaptável, responsável e apaixonado por tecnologia prestes a se
-                    tornar bacharel em ciência da computação e tem como ideal de crescimento a busca por uma posição
-                    em
-                    TI que o desafie a usar as habilidades profissionais e técnicas desenvolvidas em sua jornada na
-                    solução de problemas. Tem um forte impulso para levar tudo o que lhe é proposto até o fim com
-                    persistência e excelência. Além disso, por acreditar que conhecimento bom, é conhecimento
-                    compartilhado, deseja ser não só um bom aluno, mas também um competente transmissor de
-                    experiências
-                    e conhecimentos.</p>
+                <div class="card px-3">
+                    <p class="welcome-text fs-1">Welcome to my portifolio</p>
+                    <p class="about-text mt-4">Um motivado, adaptável, responsável e apaixonado por tecnologia prestes a
+                        se
+                        tornar bacharel em ciência da computação e tem como ideal de crescimento a busca por uma posição
+                        em
+                        TI que o desafie a usar as habilidades profissionais e técnicas desenvolvidas em sua jornada na
+                        solução de problemas. Tem um forte impulso para levar tudo o que lhe é proposto até o fim com
+                        persistência e excelência. Além disso, por acreditar que conhecimento bom, é conhecimento
+                        compartilhado, deseja ser não só um bom aluno, mas também um competente transmissor de
+                        experiências
+                        e conhecimentos.</p>
+                </div>
             </div>
         </section>
-        <section id="education" class="d-none d-md-block mt-5">
-            <div class="container">
+        <section id="education" class="d-none d-md-block mt-5 ">
+            <div class="container row justify-content-center">
                 <div class="card">
                     <h3 class="title">Access E2C - English Course</h3>
                     <div class="bar">
