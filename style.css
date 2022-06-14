@@ -28,6 +28,7 @@ header {
 .profile img{
     position: absolute;
     bottom: 15rem;
+    flex: 0 2;
 }
 
 .card {
@@ -51,12 +52,14 @@ header {
   font-size: 5rem;
   font-weight: bold;
   color: white;
+  flex: 0 1;
 }
 
 .profile-description {
   font-size: 3rem;
   font-weight: bold;
   color: white;
+  flex: 0 1;
 }
 
 .profile-photo {
@@ -177,7 +180,7 @@ footer {
   height: 14vh;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     #about,
     #education,
     #projects,
