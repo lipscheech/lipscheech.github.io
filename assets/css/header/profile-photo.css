@@ -22,10 +22,8 @@
 
 @media screen and (min-width: 1440px) {
   .profile__photo {
-    bottom: 5rem;
-    height: 18rem;
+    bottom: 2rem;
     position: absolute;
-    width: 18rem;
   }
 }
 
