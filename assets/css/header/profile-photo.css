@@ -20,7 +20,16 @@
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1440px) {
+  .profile__photo {
+    bottom: 5rem;
+    height: 18rem;
+    position: absolute;
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .profile__photo {
     bottom: 2rem;
     flex: 0 2;
