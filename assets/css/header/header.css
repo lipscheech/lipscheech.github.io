@@ -1,0 +1,26 @@
+.header {
+  background: url("../../img/pexels-pixabay-207580.jpg") no-repeat center /
+    cover;
+}
+
+@media screen and (min-width: 0) {
+  header {
+    height: 60vh;
+  }
+
+  .header {
+    display: flex;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 80vh;
+    position: relative;
+  }
+
+  .header {
+    height: 60vh;
+  }
+}

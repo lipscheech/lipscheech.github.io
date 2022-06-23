@@ -1,0 +1,31 @@
+.profile__photo {
+  background: url("../../img/photo-profile.jpg") no-repeat center / cover;
+}
+
+@media screen and (min-width: 0) {
+  .profile__photo {
+    display: block;
+    height: 13rem;
+    position: static;
+    width: 13rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile__photo {
+    bottom: 5rem;
+    height: 15rem;
+    position: absolute;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .profile__photo {
+    bottom: 2rem;
+    flex: 0 2;
+    height: 20rem;
+    position: absolute;
+    width: 20rem;
+  }
+}

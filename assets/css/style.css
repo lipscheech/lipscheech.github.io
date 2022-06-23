@@ -9,36 +9,8 @@
   background-color: transparent !important;
 }
 
-header {
-  height: 80vh;
-}
-
-.header {
-  height: 60vh;
-  background-image: url(assets/pexels-pixabay-207580.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.profile {
-    margin-top: 10rem;
-}
-
-.profile img{
-    position: absolute;
-    bottom: 15rem;
-    flex: 0 2;
-}
-
 .card {
   border: none !important;
-}
-
-.mask {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 60vh;
-  width: 100%;
 }
 
 #about,
@@ -47,24 +19,6 @@ header {
 #contact {
   max-width: 940px !important;
   margin: 0 auto;
-}
-.profile-name {
-  font-size: 5rem;
-  font-weight: bold;
-  color: white;
-  flex: 0 1;
-}
-
-.profile-description {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  flex: 0 1;
-}
-
-.profile-photo {
-  width: 20rem;
-  height: 20rem;
 }
 
 .welcome-text {
@@ -181,16 +135,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    #about,
-    #education,
-    #projects,
-    #contact {
-      margin: auto;
-    }
+  #about,
+  #education,
+  #projects,
+  #contact {
+    margin: auto;
+  }
 
-  .profile img{
+  .profile img {
     position: static;
-}
+  }
 
   .about-text {
     font-size: 1.3rem;
