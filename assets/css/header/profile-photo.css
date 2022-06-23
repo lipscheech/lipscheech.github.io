@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1080px) {
   .profile__photo {
     bottom: 2rem;
     flex: 0 2;
