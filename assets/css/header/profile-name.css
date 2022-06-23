@@ -15,3 +15,15 @@
     font-size: 5rem;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .profile__name {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile__name {
+    font-size: 5rem;
+  }
+}

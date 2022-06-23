@@ -1,34 +1,37 @@
 .profile__description {
-    font-weight: bold;
-    color: white;
-    flex: 0 1;
-  
-  }
+  font-weight: bold;
+  color: white;
+  flex: 0 1;
+}
 
-  @media screen and (min-width: 0) {
-
-    .profile__description {
+@media screen and (min-width: 0) {
+  .profile__description {
     font-size: 2rem;
     margin-top: 1rem;
-
-    }
-    
   }
+}
 
-  @media screen and (min-width: 468px) {
-
-    .profile__description {
+@media screen and (min-width: 468px) {
+  .profile__description {
     font-size: 1.5rem;
     margin-top: 1rem;
-
-    }
-    
   }
+}
 
-  @media screen and (min-width: 768px) {
-    .profile__description {
+@media screen and (min-width: 768px) {
+  .profile__description {
     font-size: 3rem;
-
-    }
-    
   }
+}
+
+@media screen and (min-width: 1360px) {
+  .profile__description {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile__description {
+    font-size: 3rem;
+  }
+}
