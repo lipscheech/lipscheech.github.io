@@ -1,0 +1,18 @@
+.navbar {
+  top: 0;
+  right: 0;
+  left: 0;
+  /* z-index: $zindex-fixed; */
+}
+
+@media screen and (min-width: 0) {
+  .navbar {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    position: fixed;
+  }
+}
