@@ -24,3 +24,26 @@
     height: 60vh;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  header {
+    height: 100vh;
+    position: relative;
+  }
+
+  .header {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    height: 80vh;
+    position: relative;
+  }
+
+  .header {
+    height: 60vh;
+  }
+}
+

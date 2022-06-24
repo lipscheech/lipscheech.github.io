@@ -14,3 +14,16 @@
     height: 60vh;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .mask {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mask {
+    height: 60vh;
+  }
+}
+

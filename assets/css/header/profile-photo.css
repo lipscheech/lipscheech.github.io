@@ -23,26 +23,7 @@
 
 @media screen and (min-width: 1360px) {
   .profile__photo {
-    bottom: 2.7rem;
-    height: 12rem;
-    position: absolute;
-    width: 12rem;
-  }
-}
-
-
-@media screen and (min-width: 1440px) {
-  .profile__photo {
-    bottom: 2rem;
-    height: 15rem;
-    position: absolute;
-    width: 15rem;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .profile__photo {
-    bottom: 2rem;
+    bottom: 1rem;
     flex: 0 2;
     height: 20rem;
     position: absolute;
