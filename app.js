@@ -1,6 +1,6 @@
 const CERTIFICADOS = [
     {
-        "nome": "Infraestrutura  Ágil  com  práticas  DevOps",
+        "nome": "Infraestrutura Ágil com práticas DevOps",
         "instituicao": "4linux",
         "cargaHoraria": 40,
         "ano": 2022,
@@ -67,6 +67,15 @@ const CERTIFICADOS = [
 const nav = document.getElementById('nav');
 const links = nav.querySelectorAll('a');
 const carouselInner = document.querySelector('.carousel-inner');
+let carouselItem,
+    carouselCaption,
+    nome,
+    institucao,
+    horas,
+    ano,
+    logo,
+    duration,
+    index = 0;
 
 document.body.onscroll = () => {
     if (window.pageYOffset >= 567) {
@@ -81,48 +90,79 @@ document.body.onscroll = () => {
     }
 }
 
-function preencherCarrousel(param) {
-
+function createElementLink() {
+    return document.createElement('a');
 }
 
-let carouselItem = document.createElement('a');
-let carouselCaption = document.createElement('div');
-let nome = document.createElement('h5');
-let institucao = document.createElement('p');
-let horas = document.createElement('p');
-let ano = document.createElement('p');
-let logo = document.createElement('img');
+function createElementDiv() {
+    return document.createElement('div');
+}
 
+function createElementP() {
+    return document.createElement('p');
+}
 
+function createElementH5() {
+    return document.createElement('h5');
+}
 
-
-// link
-// d-none d-md-block
-
-function addElement(param){
-    
+function createElementImage() {
+    return document.createElement('img');
 }
 
 CERTIFICADOS.forEach(c => {
     console.log(c);
+    carouselItem = createElementLink();
     carouselInner.appendChild(carouselItem);
-    carouselItem.classList.add('carousel-item')
+    carouselItem.classList.add('carousel-item');
+    carouselItem.classList.add('link');
+    index === 0 ? carouselItem.classList.add('active') : 0;
     carouselItem.setAttribute('href', c.link);
 
+    logo = createElementImage();
     carouselItem.appendChild(logo);
+    logo.setAttribute('src', c.logo);
+    logo.classList.add('education__imagem')
+    logo.classList.add('d-block');
+    // logo.classList.add('w-100');
+    logo.classList.add('img-thumbnail')
+
+
+    carouselCaption = createElementDiv();
     carouselItem.appendChild(carouselCaption);
     carouselCaption.classList.add('carousel-caption');
-    carouselCaption.appendChild(nome);
+    carouselCaption.classList.add('mb-2');
+    carouselCaption.classList.add('d-none');
+    carouselCaption.classList.add('d-md-block');
+
+    institucao = createElementP();
     carouselCaption.appendChild(institucao);
-    carouselCaption.appendChild(horas);
-    carouselCaption.appendChild(ano);
+    institucao.textContent = c.instituicao;
+    institucao.classList.add('mb-2');
 
+    nome = createElementH5();
+    carouselCaption.appendChild(nome);
     nome.textContent = c.nome;
-    institucao.textContent = c.institucao;
-    horas.textContent = c.cargaHoraria;
-    ano.textContent = c.ano;
-    logo.setAttribute('src', c.logo);
+    nome.classList.add('mb-2');
 
+    duration = createElementDiv();
+    carouselCaption.appendChild(duration);
+
+    duration.classList.add('d-flex');
+    duration.classList.add('align-items-center');
+    duration.classList.add('justify-content-center');
+
+    horas = createElementP();
+    duration.appendChild(horas);
+    horas.textContent = "Carga horária: " + c.cargaHoraria + "H";
+    horas.classList.add('me-3');
+
+
+    ano = createElementP();
+    duration.appendChild(ano);
+    ano.textContent = "Ano de conclusão: " + c.ano;
+
+    index++;
 })
 
 
