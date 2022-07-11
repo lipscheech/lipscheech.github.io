@@ -64,9 +64,10 @@ const CERTIFICADOS = [
     },
 ]
 
-const nav = document.getElementById('nav');
+const nav = document.querySelector('.navbar');
 const links = nav.querySelectorAll('a');
 const carouselInner = document.querySelector('.carousel-inner');
+
 let carouselItem,
     carouselCaption,
     nome,
@@ -111,7 +112,6 @@ function createElementImage() {
 }
 
 CERTIFICADOS.forEach(c => {
-    console.log(c);
     carouselItem = createElementLink();
     carouselInner.appendChild(carouselItem);
     carouselItem.classList.add('carousel-item');
