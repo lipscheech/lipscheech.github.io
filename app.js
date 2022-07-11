@@ -124,9 +124,7 @@ CERTIFICADOS.forEach(c => {
     logo.setAttribute('src', c.logo);
     logo.classList.add('education__imagem')
     logo.classList.add('d-block');
-    // logo.classList.add('w-100');
     logo.classList.add('img-thumbnail')
-
 
     carouselCaption = createElementDiv();
     carouselItem.appendChild(carouselCaption);
@@ -156,7 +154,6 @@ CERTIFICADOS.forEach(c => {
     duration.appendChild(horas);
     horas.textContent = "Carga horária: " + c.cargaHoraria + "H";
     horas.classList.add('me-3');
-
 
     ano = createElementP();
     duration.appendChild(ano);

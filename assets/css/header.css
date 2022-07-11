@@ -1,0 +1,128 @@
+header {
+  position: relative;
+}
+
+.header {
+  background: url("../img/pexels-pixabay-207580.jpg") no-repeat center / cover;
+}
+
+.mascara {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+.profile {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+}
+
+.profile__photo {
+  background: url("../img/photo-profile.jpg") no-repeat center / cover;
+  position: absolute;
+}
+
+@media screen and (min-width: 0) {
+  header {
+    height: 80vh;
+  }
+  .header {
+    height: 60vh;
+  }
+  .profile {
+    margin-top: 6rem;
+  }
+
+  .profile__name {
+    font-size: 1.5rem;
+  }
+
+  .profile__description {
+    font-size: 0.85rem;
+  }
+
+  .profile__photo {
+    bottom: 4rem;
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 60vh;
+  }
+
+  .profile {
+    margin-top: 6rem;
+  }
+
+  .profile__name {
+    font-size: 2rem;
+  }
+
+  .profile__description {
+    font-size: 1.7rem;
+  }
+
+  .profile__photo {
+    bottom: 2.5rem;
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header{
+    height: 100vh;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  .profile {
+    margin-top: 13rem;
+  }
+
+  .profile__name {
+    font-size: 3rem;
+  }
+
+  .profile__description {
+    font-size: 2.25rem;
+  }
+
+  .profile__photo {
+    bottom: 2rem;
+    
+  }
+}
+
+@media screen and (min-width: 1600px) {
+
+  header{
+    height: 80vh;
+  }
+
+  .header {
+    height: 60vh;
+  }
+
+  .profile {
+    margin-top: 7rem;
+  }
+
+  .profile__name {
+    font-size: 5rem;
+  }
+
+  .profile__description {
+    font-size: 3.2rem;
+  }
+
+  .profile__photo {
+    bottom: 2rem;
+    
+  }
+  
+}
