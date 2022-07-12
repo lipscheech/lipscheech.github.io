@@ -152,6 +152,14 @@ header {
 
 @media screen and (min-width: 1600px) {
 
+  header{
+    height: 80vh;
+  }
+
+  .header {
+    height: 60vh;
+  }
+
   .profile {
     margin-top: 7rem;
   }
@@ -165,8 +173,9 @@ header {
   }
 
   .profile__photo {
-    bottom: 2rem;
-    
+    top: 25.5rem;
+    height: 20rem;
+    width: 20rem;
   }
   
 }
