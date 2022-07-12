@@ -78,7 +78,7 @@ header {
 @media screen and (min-width: 1024px) {
   
   .profile {
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
 
   .profile__name {
@@ -90,7 +90,9 @@ header {
   }
 
   .profile__photo {
-    bottom: 2rem;
+    bottom: 3rem;
+    height: 15rem;
+    width: 15rem;
     
   }
 }
